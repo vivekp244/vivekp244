@@ -1,0 +1,23 @@
+/* Custom CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.header {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+}
+
+.content {
+    margin: 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #343a40;
+    color: white;
+}

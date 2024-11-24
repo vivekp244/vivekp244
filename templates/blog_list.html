@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1>Blog Posts</h1>
+</div>
+<div class="container blog-list">
+    {% for blog in current_user.blog_posts %}
+        <div class="blog-item">
+            <h2><a href="{{ url_for('blog', blog_id=blog.id) }}">{{ blog.title }}</a></h2>
+            <p>{{ blog.date_posted.strftime('%Y-%m-%d %H:%M') }}</p>
+            <p>{{ blog.content[:200] }}...</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
